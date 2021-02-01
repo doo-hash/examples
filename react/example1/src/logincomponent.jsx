@@ -1,5 +1,4 @@
 import React from 'react';
-import SignupComponent from './signupcomponent';
 
 export default class LoginComponent extends React.Component{
     constructor(props){
@@ -29,29 +28,27 @@ export default class LoginComponent extends React.Component{
 
     render(){
         return(
-            <span class = "border border-primary">
-        <div class = "login-component">
+            
+        <div class = "container-sm border border-primary rounded-lg shadow-lg p-3 mb-5 rounded">
             
              <form action = "" method = "post" onSubmit = {this.handlesubmit}>
                 
-                <div class = "form-group">
+                <div class = "form-group w-50 p-3">
                     <label for name = "username">UserName</label>
                     <input type = "text" class= "form-control" id = "username" name = "username" placeholder = "enter your name." value = {this.state.username} onChange = {this.handlechange} required />
                 </div>    
-                <div class = "form-group">
+                <div class = "form-group w-50 p-3">
                     <label for name = "psd">Password</label>
                     <input type = "password" class = "form-control" id = "psd" name = "psd" placeholder = "enter your password" value = {this.state.psd} onChange = {this.handlechange} required />
                 </div>
+                <button type = "submit" class = "btn btn-primary btn-md btn-block active w-25" aria-pressed = "true">Login</button>
                 
-                <input type = "submit" name = "Login" value = "Login"  />
-                <br />
-                <small>Forget <a href = "">Password?</a></small>
+                <small>Forget <a href = "" class = "text-primary">Password?</a></small>
             
             </form>
-            <button type = "submit" class = "btn btn-primary" name = "signin" onClick = {this.signupcomp} >Sign In</button> 
             
             </div>
-            </span>
+          
         );
     }
 }

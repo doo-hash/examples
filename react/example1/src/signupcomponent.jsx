@@ -36,13 +36,14 @@ export default class SignupComponent extends React.Component{
         }
         render() {
           return (
-            <div class = "signup-component">
+            <div class = "container-md">
             <form action = "" method = "POST" onSubmit = {this.mySubmitHandler}>
 
               <div class = "align-items-center">
               <div class = "form-row">
                 <div class = "form-group col-md-6">
-                <label for = "firstname" >First Name</label>                      <input type = "text" class = "form-control" id = "firstname" name = "firstname" value = {this.state.firstname} onChange = {this.myChangeHandler} required />
+                <label for = "firstname" >First Name</label>
+                <input type = "text" class = "form-control" id = "firstname" name = "firstname" value = {this.state.firstname} onChange = {this.myChangeHandler} required />
               </div>
 
                 <div class = "form-group col-md-6">
@@ -94,7 +95,7 @@ export default class SignupComponent extends React.Component{
                   <textarea class = "form-control" id = "description" name = "description" value = {this.state.description} onChange={this.myChangeHandler} />
                 </div>
 
-                <button type="submit" class= "btn-btn-primary" name ="submit">Sign Up</button>        
+                <button type="submit" class= "btn btn-primary btn-lg active" name ="submit" aria-pressed = "true">Sign Up</button>        
             </div>
             </form>
             </div>
