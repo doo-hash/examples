@@ -36,7 +36,7 @@ export default class SignupComponent extends React.Component{
         }
         render() {
           return (
-            <div class = "container-md">
+            <div class = "container-md pt-5 mt-5 pb-5 mb-5">
             <form action = "" method = "POST" onSubmit = {this.mySubmitHandler}>
 
               <div class = "align-items-center">
